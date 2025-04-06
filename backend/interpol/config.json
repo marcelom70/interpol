@@ -1,0 +1,18 @@
+{
+    "MaxPlayers": 5,
+    "InitialTickets":{
+        "Detective":{
+            "Taxi": 10,
+            "Bus": 8,
+            "Metro": 4
+         },
+         "x":{
+            "Taxi": 6,
+            "Bus": 4,
+            "Metro": 3,
+            "Hidden": "MaxPlayers",
+            "PlayTwice": 2
+          } 
+         }
+
+ }

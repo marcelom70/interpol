@@ -1,0 +1,2292 @@
+[
+  {
+    "MODAL": "BUS",
+    "SPOT1": 100,
+    "SPOT2": 82
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 102,
+    "SPOT2": 67
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 102,
+    "SPOT2": 86
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 105,
+    "SPOT2": 72
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 105,
+    "SPOT2": 87
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 105,
+    "SPOT2": 89
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 107,
+    "SPOT2": 105
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 107,
+    "SPOT2": 72
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 108,
+    "SPOT2": 105
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 111,
+    "SPOT2": 100
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 116,
+    "SPOT2": 108
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 116,
+    "SPOT2": 86
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 123,
+    "SPOT2": 122
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 124,
+    "SPOT2": 111
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 124,
+    "SPOT2": 123
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 124,
+    "SPOT2": 77
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 127,
+    "SPOT2": 102
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 127,
+    "SPOT2": 116
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 133,
+    "SPOT2": 127
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 135,
+    "SPOT2": 108
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 135,
+    "SPOT2": 128
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 14,
+    "SPOT2": 13
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 140,
+    "SPOT2": 133
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 140,
+    "SPOT2": 82
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 142,
+    "SPOT2": 116
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 142,
+    "SPOT2": 128
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 144,
+    "SPOT2": 123
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 149,
+    "SPOT2": 123
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 15,
+    "SPOT2": 14
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 153,
+    "SPOT2": 124
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 154,
+    "SPOT2": 140
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 154,
+    "SPOT2": 153
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 156,
+    "SPOT2": 140
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 156,
+    "SPOT2": 154
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 157,
+    "SPOT2": 133
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 157,
+    "SPOT2": 142
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 157,
+    "SPOT2": 156
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 161,
+    "SPOT2": 107
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 161,
+    "SPOT2": 128
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 161,
+    "SPOT2": 135
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 163,
+    "SPOT2": 144
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 168,
+    "SPOT2": 155
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 176,
+    "SPOT2": 163
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 180,
+    "SPOT2": 153
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 180,
+    "SPOT2": 165
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 184,
+    "SPOT2": 153
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 184,
+    "SPOT2": 156
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 184,
+    "SPOT2": 180
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 185,
+    "SPOT2": 157
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 185,
+    "SPOT2": 184
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 187,
+    "SPOT2": 128
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 187,
+    "SPOT2": 185
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 190,
+    "SPOT2": 176
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 190,
+    "SPOT2": 180
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 191,
+    "SPOT2": 163
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 191,
+    "SPOT2": 165
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 191,
+    "SPOT2": 190
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 199,
+    "SPOT2": 128
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 199,
+    "SPOT2": 161
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 22,
+    "SPOT2": 3
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 23,
+    "SPOT2": 13
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 23,
+    "SPOT2": 14
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 23,
+    "SPOT2": 22
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 23,
+    "SPOT2": 3
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 29,
+    "SPOT2": 15
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 34,
+    "SPOT2": 22
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 35,
+    "SPOT2": 22
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 41,
+    "SPOT2": 15
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 41,
+    "SPOT2": 29
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 42,
+    "SPOT2": 29
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 42,
+    "SPOT2": 7
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 46,
+    "SPOT2": 1
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 46,
+    "SPOT2": 34
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 52,
+    "SPOT2": 13
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 52,
+    "SPOT2": 41
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 55,
+    "SPOT2": 29
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 58,
+    "SPOT2": 1
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 58,
+    "SPOT2": 46
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 63,
+    "SPOT2": 34
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 65,
+    "SPOT2": 22
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 65,
+    "SPOT2": 63
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 67,
+    "SPOT2": 23
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 67,
+    "SPOT2": 52
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 67,
+    "SPOT2": 65
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 72,
+    "SPOT2": 42
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 74,
+    "SPOT2": 58
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 77,
+    "SPOT2": 58
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 77,
+    "SPOT2": 76
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 78,
+    "SPOT2": 46
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 78,
+    "SPOT2": 77
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 79,
+    "SPOT2": 63
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 79,
+    "SPOT2": 78
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 82,
+    "SPOT2": 65
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 82,
+    "SPOT2": 67
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 86,
+    "SPOT2": 52
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 87,
+    "SPOT2": 41
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 87,
+    "SPOT2": 86
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 89,
+    "SPOT2": 55
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 94,
+    "SPOT2": 74
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 94,
+    "SPOT2": 75
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 94,
+    "SPOT2": 77
+  },
+  {
+    "MODAL": "BUS",
+    "SPOT1": 94,
+    "SPOT2": 93
+  },
+  {
+    "MODAL": "HIDDEN",
+    "SPOT1": 115,
+    "SPOT2": 108
+  },
+  {
+    "MODAL": "HIDDEN",
+    "SPOT1": 157,
+    "SPOT2": 115
+  },
+  {
+    "MODAL": "HIDDEN",
+    "SPOT1": 194,
+    "SPOT2": 157
+  },
+  {
+    "MODAL": "METRO",
+    "SPOT1": 111,
+    "SPOT2": 67
+  },
+  {
+    "MODAL": "METRO",
+    "SPOT1": 128,
+    "SPOT2": 89
+  },
+  {
+    "MODAL": "METRO",
+    "SPOT1": 140,
+    "SPOT2": 128
+  },
+  {
+    "MODAL": "METRO",
+    "SPOT1": 140,
+    "SPOT2": 89
+  },
+  {
+    "MODAL": "METRO",
+    "SPOT1": 153,
+    "SPOT2": 111
+  },
+  {
+    "MODAL": "METRO",
+    "SPOT1": 153,
+    "SPOT2": 140
+  },
+  {
+    "MODAL": "METRO",
+    "SPOT1": 163,
+    "SPOT2": 111
+  },
+  {
+    "MODAL": "METRO",
+    "SPOT1": 163,
+    "SPOT2": 153
+  },
+  {
+    "MODAL": "METRO",
+    "SPOT1": 185,
+    "SPOT2": 128
+  },
+  {
+    "MODAL": "METRO",
+    "SPOT1": 185,
+    "SPOT2": 153
+  },
+  {
+    "MODAL": "METRO",
+    "SPOT1": 46,
+    "SPOT2": 1
+  },
+  {
+    "MODAL": "METRO",
+    "SPOT1": 46,
+    "SPOT2": 13
+  },
+  {
+    "MODAL": "METRO",
+    "SPOT1": 67,
+    "SPOT2": 13
+  },
+  {
+    "MODAL": "METRO",
+    "SPOT1": 74,
+    "SPOT2": 46
+  },
+  {
+    "MODAL": "METRO",
+    "SPOT1": 79,
+    "SPOT2": 46
+  },
+  {
+    "MODAL": "METRO",
+    "SPOT1": 89,
+    "SPOT2": 13
+  },
+  {
+    "MODAL": "METRO",
+    "SPOT1": 89,
+    "SPOT2": 67
+  },
+  {
+    "MODAL": "METRO",
+    "SPOT1": 93,
+    "SPOT2": 79
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 10,
+    "SPOT2": 2
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 100,
+    "SPOT2": 80
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 100,
+    "SPOT2": 81
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 101,
+    "SPOT2": 100
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 101,
+    "SPOT2": 83
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 102,
+    "SPOT2": 83
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 103,
+    "SPOT2": 102
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 103,
+    "SPOT2": 85
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 103,
+    "SPOT2": 86
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 104,
+    "SPOT2": 86
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 105,
+    "SPOT2": 89
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 105,
+    "SPOT2": 90
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 105,
+    "SPOT2": 91
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 106,
+    "SPOT2": 105
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 107,
+    "SPOT2": 106
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 107,
+    "SPOT2": 91
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 108,
+    "SPOT2": 105
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 109,
+    "SPOT2": 96
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 109,
+    "SPOT2": 97
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 11,
+    "SPOT2": 10
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 11,
+    "SPOT2": 3
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 110,
+    "SPOT2": 109
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 110,
+    "SPOT2": 98
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 110,
+    "SPOT2": 99
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 111,
+    "SPOT2": 110
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 112,
+    "SPOT2": 100
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 112,
+    "SPOT2": 111
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 112,
+    "SPOT2": 99
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 113,
+    "SPOT2": 100
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 114,
+    "SPOT2": 101
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 114,
+    "SPOT2": 113
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 115,
+    "SPOT2": 102
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 115,
+    "SPOT2": 114
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 116,
+    "SPOT2": 104
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 117,
+    "SPOT2": 108
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 117,
+    "SPOT2": 116
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 117,
+    "SPOT2": 88
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 118,
+    "SPOT2": 105
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 118,
+    "SPOT2": 116
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 119,
+    "SPOT2": 107
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 119,
+    "SPOT2": 108
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 12,
+    "SPOT2": 3
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 121,
+    "SPOT2": 120
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 122,
+    "SPOT2": 121
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 122,
+    "SPOT2": 95
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 123,
+    "SPOT2": 122
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 124,
+    "SPOT2": 109
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 124,
+    "SPOT2": 111
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 124,
+    "SPOT2": 123
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 125,
+    "SPOT2": 112
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 125,
+    "SPOT2": 113
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 126,
+    "SPOT2": 114
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 127,
+    "SPOT2": 115
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 127,
+    "SPOT2": 116
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 127,
+    "SPOT2": 126
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 129,
+    "SPOT2": 117
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 129,
+    "SPOT2": 118
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 13,
+    "SPOT2": 4
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 130,
+    "SPOT2": 124
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 131,
+    "SPOT2": 125
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 131,
+    "SPOT2": 130
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 132,
+    "SPOT2": 114
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 133,
+    "SPOT2": 127
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 134,
+    "SPOT2": 118
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 134,
+    "SPOT2": 127
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 135,
+    "SPOT2": 129
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 136,
+    "SPOT2": 119
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 136,
+    "SPOT2": 135
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 137,
+    "SPOT2": 123
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 138,
+    "SPOT2": 124
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 139,
+    "SPOT2": 130
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 14,
+    "SPOT2": 13
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 140,
+    "SPOT2": 132
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 140,
+    "SPOT2": 133
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 140,
+    "SPOT2": 139
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 141,
+    "SPOT2": 133
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 141,
+    "SPOT2": 134
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 142,
+    "SPOT2": 118
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 142,
+    "SPOT2": 128
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 142,
+    "SPOT2": 129
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 142,
+    "SPOT2": 134
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 142,
+    "SPOT2": 141
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 143,
+    "SPOT2": 128
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 143,
+    "SPOT2": 129
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 143,
+    "SPOT2": 135
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 143,
+    "SPOT2": 142
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 144,
+    "SPOT2": 120
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 145,
+    "SPOT2": 121
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 145,
+    "SPOT2": 144
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 146,
+    "SPOT2": 122
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 146,
+    "SPOT2": 145
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 147,
+    "SPOT2": 137
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 147,
+    "SPOT2": 146
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 148,
+    "SPOT2": 123
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 149,
+    "SPOT2": 123
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 149,
+    "SPOT2": 148
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 15,
+    "SPOT2": 14
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 15,
+    "SPOT2": 5
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 150,
+    "SPOT2": 138
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 150,
+    "SPOT2": 149
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 151,
+    "SPOT2": 150
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 152,
+    "SPOT2": 138
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 152,
+    "SPOT2": 151
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 153,
+    "SPOT2": 139
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 153,
+    "SPOT2": 152
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 154,
+    "SPOT2": 139
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 154,
+    "SPOT2": 140
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 154,
+    "SPOT2": 153
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 155,
+    "SPOT2": 154
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 156,
+    "SPOT2": 140
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 156,
+    "SPOT2": 155
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 157,
+    "SPOT2": 156
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 158,
+    "SPOT2": 141
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 158,
+    "SPOT2": 142
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 158,
+    "SPOT2": 157
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 159,
+    "SPOT2": 158
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 159,
+    "SPOT2": 170
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 16,
+    "SPOT2": 15
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 16,
+    "SPOT2": 5
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 160,
+    "SPOT2": 128
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 160,
+    "SPOT2": 143
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 161,
+    "SPOT2": 135
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 161,
+    "SPOT2": 160
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 162,
+    "SPOT2": 136
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 163,
+    "SPOT2": 146
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 164,
+    "SPOT2": 147
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 164,
+    "SPOT2": 148
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 165,
+    "SPOT2": 149
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 165,
+    "SPOT2": 151
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 166,
+    "SPOT2": 151
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 166,
+    "SPOT2": 153
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 167,
+    "SPOT2": 153
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 168,
+    "SPOT2": 167
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 169,
+    "SPOT2": 156
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 17,
+    "SPOT2": 7
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 170,
+    "SPOT2": 157
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 172,
+    "SPOT2": 128
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 172,
+    "SPOT2": 159
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 173,
+    "SPOT2": 160
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 173,
+    "SPOT2": 171
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 174,
+    "SPOT2": 161
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 174,
+    "SPOT2": 173
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 175,
+    "SPOT2": 162
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 175,
+    "SPOT2": 171
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 175,
+    "SPOT2": 174
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 177,
+    "SPOT2": 144
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 177,
+    "SPOT2": 163
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 177,
+    "SPOT2": 176
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 178,
+    "SPOT2": 164
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 179,
+    "SPOT2": 164
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 179,
+    "SPOT2": 165
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 18,
+    "SPOT2": 8
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 180,
+    "SPOT2": 165
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 181,
+    "SPOT2": 166
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 181,
+    "SPOT2": 180
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 182,
+    "SPOT2": 181
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 183,
+    "SPOT2": 166
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 183,
+    "SPOT2": 167
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 183,
+    "SPOT2": 182
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 184,
+    "SPOT2": 168
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 184,
+    "SPOT2": 169
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 185,
+    "SPOT2": 170
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 185,
+    "SPOT2": 184
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 186,
+    "SPOT2": 159
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 186,
+    "SPOT2": 185
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 187,
+    "SPOT2": 172
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 188,
+    "SPOT2": 128
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 188,
+    "SPOT2": 173
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 188,
+    "SPOT2": 187
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 189,
+    "SPOT2": 176
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 189,
+    "SPOT2": 178
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 19,
+    "SPOT2": 8
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 19,
+    "SPOT2": 9
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 190,
+    "SPOT2": 189
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 191,
+    "SPOT2": 178
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 191,
+    "SPOT2": 179
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 192,
+    "SPOT2": 190
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 192,
+    "SPOT2": 191
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 193,
+    "SPOT2": 180
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 193,
+    "SPOT2": 181
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 194,
+    "SPOT2": 192
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 194,
+    "SPOT2": 193
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 195,
+    "SPOT2": 182
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 195,
+    "SPOT2": 194
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 196,
+    "SPOT2": 183
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 196,
+    "SPOT2": 184
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 197,
+    "SPOT2": 184
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 197,
+    "SPOT2": 195
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 197,
+    "SPOT2": 196
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 198,
+    "SPOT2": 159
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 198,
+    "SPOT2": 186
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 198,
+    "SPOT2": 187
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 199,
+    "SPOT2": 171
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 199,
+    "SPOT2": 188
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 199,
+    "SPOT2": 198
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 20,
+    "SPOT2": 2
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 20,
+    "SPOT2": 9
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 21,
+    "SPOT2": 10
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 22,
+    "SPOT2": 11
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 23,
+    "SPOT2": 12
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 23,
+    "SPOT2": 13
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 23,
+    "SPOT2": 22
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 24,
+    "SPOT2": 13
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 25,
+    "SPOT2": 14
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 26,
+    "SPOT2": 15
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 27,
+    "SPOT2": 26
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 28,
+    "SPOT2": 16
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 29,
+    "SPOT2": 16
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 29,
+    "SPOT2": 17
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 29,
+    "SPOT2": 6
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 30,
+    "SPOT2": 17
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 31,
+    "SPOT2": 18
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 32,
+    "SPOT2": 19
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 33,
+    "SPOT2": 20
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 33,
+    "SPOT2": 21
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 33,
+    "SPOT2": 32
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 34,
+    "SPOT2": 10
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 34,
+    "SPOT2": 22
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 36,
+    "SPOT2": 35
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 37,
+    "SPOT2": 23
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 37,
+    "SPOT2": 24
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 37,
+    "SPOT2": 36
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 38,
+    "SPOT2": 24
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 38,
+    "SPOT2": 25
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 39,
+    "SPOT2": 25
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 39,
+    "SPOT2": 26
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 4,
+    "SPOT2": 3
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 40,
+    "SPOT2": 27
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 41,
+    "SPOT2": 28
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 41,
+    "SPOT2": 29
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 41,
+    "SPOT2": 40
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 42,
+    "SPOT2": 29
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 42,
+    "SPOT2": 30
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 43,
+    "SPOT2": 18
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 43,
+    "SPOT2": 31
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 44,
+    "SPOT2": 31
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 44,
+    "SPOT2": 32
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 45,
+    "SPOT2": 32
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 46,
+    "SPOT2": 33
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 46,
+    "SPOT2": 45
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 47,
+    "SPOT2": 34
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 47,
+    "SPOT2": 46
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 48,
+    "SPOT2": 34
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 48,
+    "SPOT2": 35
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 49,
+    "SPOT2": 36
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 50,
+    "SPOT2": 37
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 50,
+    "SPOT2": 38
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 50,
+    "SPOT2": 49
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 51,
+    "SPOT2": 38
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 51,
+    "SPOT2": 39
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 52,
+    "SPOT2": 39
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 52,
+    "SPOT2": 40
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 52,
+    "SPOT2": 51
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 53,
+    "SPOT2": 40
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 54,
+    "SPOT2": 41
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 54,
+    "SPOT2": 53
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 55,
+    "SPOT2": 29
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 55,
+    "SPOT2": 54
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 56,
+    "SPOT2": 42
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 57,
+    "SPOT2": 43
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 58,
+    "SPOT2": 44
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 58,
+    "SPOT2": 45
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 58,
+    "SPOT2": 57
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 59,
+    "SPOT2": 45
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 59,
+    "SPOT2": 58
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 60,
+    "SPOT2": 45
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 61,
+    "SPOT2": 46
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 61,
+    "SPOT2": 60
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 62,
+    "SPOT2": 47
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 62,
+    "SPOT2": 48
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 62,
+    "SPOT2": 61
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 63,
+    "SPOT2": 48
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 64,
+    "SPOT2": 63
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 65,
+    "SPOT2": 35
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 65,
+    "SPOT2": 64
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 66,
+    "SPOT2": 49
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 66,
+    "SPOT2": 65
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 67,
+    "SPOT2": 51
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 67,
+    "SPOT2": 66
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 68,
+    "SPOT2": 51
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 68,
+    "SPOT2": 67
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 69,
+    "SPOT2": 52
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 69,
+    "SPOT2": 53
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 69,
+    "SPOT2": 68
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 7,
+    "SPOT2": 6
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 70,
+    "SPOT2": 54
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 71,
+    "SPOT2": 55
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 71,
+    "SPOT2": 70
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 71,
+    "SPOT2": 72
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 72,
+    "SPOT2": 42
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 73,
+    "SPOT2": 57
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 74,
+    "SPOT2": 58
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 74,
+    "SPOT2": 73
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 75,
+    "SPOT2": 59
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 75,
+    "SPOT2": 74
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 76,
+    "SPOT2": 59
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 76,
+    "SPOT2": 60
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 76,
+    "SPOT2": 61
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 78,
+    "SPOT2": 61
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 78,
+    "SPOT2": 77
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 79,
+    "SPOT2": 62
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 79,
+    "SPOT2": 63
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 79,
+    "SPOT2": 78
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 8,
+    "SPOT2": 1
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 80,
+    "SPOT2": 63
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 82,
+    "SPOT2": 65
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 82,
+    "SPOT2": 66
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 82,
+    "SPOT2": 81
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 84,
+    "SPOT2": 67
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 85,
+    "SPOT2": 68
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 85,
+    "SPOT2": 84
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 86,
+    "SPOT2": 69
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 87,
+    "SPOT2": 70
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 88,
+    "SPOT2": 87
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 89,
+    "SPOT2": 71
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 89,
+    "SPOT2": 88
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 9,
+    "SPOT2": 1
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 90,
+    "SPOT2": 72
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 91,
+    "SPOT2": 56
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 91,
+    "SPOT2": 72
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 91,
+    "SPOT2": 90
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 92,
+    "SPOT2": 73
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 93,
+    "SPOT2": 92
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 94,
+    "SPOT2": 93
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 95,
+    "SPOT2": 77
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 95,
+    "SPOT2": 82
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 95,
+    "SPOT2": 94
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 96,
+    "SPOT2": 77
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 96,
+    "SPOT2": 82
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 97,
+    "SPOT2": 78
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 97,
+    "SPOT2": 96
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 98,
+    "SPOT2": 79
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 98,
+    "SPOT2": 97
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 99,
+    "SPOT2": 80
+  },
+  {
+    "MODAL": "TAXI",
+    "SPOT1": 99,
+    "SPOT2": 98
+  }
+]

@@ -248,7 +248,7 @@ class Board:
         return messageSocket
 
     def reset(self,player: Player):
-        pass
+        self.status = 
 
     def remove_player(self, client_id: int):
 

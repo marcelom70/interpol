@@ -138,8 +138,24 @@ async def move_player(request: MoveRequest, response: Response):
 @app.post("/reset")
 async def reset(request: MoveRequest, response: Response):
     message = game.reset(request.player)
-    response.status_code = 200
+
+    if message == "Game restarted":
+        response.status_code = 200
+    else:
+        response.status_code = 500
     return message
+
+@app.post("/ask-ai")
+async def ask_ai(request: Player, response: Response):
+    message = game.ask_ai(request.current_spot)
+
+    if message == "Game restarted":
+        response.status_code = 200
+    else:
+        response.status_code = 500
+    return message
+
+
 
 @app.get("/config")
 def list_config(response: Response):

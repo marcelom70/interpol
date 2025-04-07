@@ -2,10 +2,12 @@ version: "3"
 services:
   frontend:
     build: ./frontend
+    # image: marcelom70/interpol-frontend:latest
     ports:
       - "80:80"
 
   backend:
     build: ./backend
+    # image: marcelom70/interpol-backend:latest
     ports:
       - "8000:8000"

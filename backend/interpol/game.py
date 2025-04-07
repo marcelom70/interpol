@@ -5,6 +5,14 @@ import os
 import json
 import random
 from pydantic import BaseModel
+import openai
+import json
+from dotenv import load_dotenv, find_dotenv
+import pandas as pd
+
+_ = load_dotenv(find_dotenv())
+
+client = openai.Client()
 
 class Ticket(BaseModel):    
     modal_type: str
@@ -77,6 +85,7 @@ class Board:
 
     colors = [ "red", "purple", "magenta", "orange", "blue",]
     visible_rounds = [3, 8, 13, 18, 24]
+    lista_de_dicionarios = []
 
     def __init__(self):
         # Current directory
@@ -93,6 +102,67 @@ class Board:
             spot = Spot(row.SPOT, row.X, row.Y)
             self.__add_spot(spot)        
         self.__load_config()
+
+
+    def __carregar_percursos(self):
+        # Current directory
+        script_dir = os.path.dirname(os.path.abspath(__file__))        
+        nomeArquivo = os.path.join(script_dir, "routes.json")
+        with open(nomeArquivo, 'r', encoding='utf-8') as f:
+            retorno = json.load(f)
+        return retorno
+
+    def __consulta_privada(self, posicao):
+        retorno = []
+        print(f"Onde estou: {posicao}")
+        print(f"Len da lista de dict: {len(self.lista_de_dicionarios)}")
+        for dicionario in self.lista_de_dicionarios:
+            valores = list(dicionario.values())
+            modal, posicao1, posicao2 = valores
+            print(f"Modal: {modal}, Posição 1: {posicao1}, Posição 2: {posicao2}") 
+            posicaoEncontrada = ''        
+            if posicao == str(posicao1):
+                print(f"Encontrou na posição 1: {posicao2}")
+                posicaoEncontrada = str(posicao2)
+            elif posicao == str(posicao2):
+                print(f"Encontrou na posição 2: {posicao1}")
+                posicaoEncontrada = str(posicao1)
+            if posicaoEncontrada != '':
+                percurso = {"posicao": posicaoEncontrada, "modal": modal}
+                print(f"Segundo encontrado, dá pra ir para esses lugares: {percurso}")
+                retorno.append(percurso)
+        
+        print(f"Percursos retornados: {len(retorno)}")
+        return json.dumps(retorno, ensure_ascii=False)
+
+
+    def consultar_percurso(self, posicao):
+        return self.__consulta_privada(posicao)
+
+
+    tools = [
+        {
+            "type": "function",
+            "function": {
+                "name": "consultar_percurso",
+                "description": "Obtem os percursos possíveis para a posição atual",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "posicao": {
+                            "type": "string",
+                            "description": "A posição atual. Ex. 124",
+                        },
+                    },
+                    "required": ["posicao"]
+                },
+            },            
+        }
+    ]
+
+    funcoes_disponiveis = {
+        "consultar_percurso": consultar_percurso
+    }
 
     def __check_player(self, nick: str):
         players = [player for player in self.players_list if player.nick == nick]
@@ -248,7 +318,18 @@ class Board:
         return messageSocket
 
     def reset(self,player: Player):
-        self.status = 
+        try:            
+            self.status = "not started"
+            for player in self.players_list:
+                player.current_spot = 0
+                player.position = {"x": 0, "y": 0}
+            return_str = "Game restarted."
+        except Exception as e:
+            return_str = f'{e}'
+            player = None
+        finally:
+            return {"message": return_str, "player": player}
+
 
     def remove_player(self, client_id: int):
 
@@ -341,25 +422,112 @@ class Board:
         finally:
             return {"message": return_str, "player": player}
 
+    def ask_ai(self, position):
+        self.lista_de_dicionarios = self.__carregar_percursos()
+        print(f"Tamanho da lista: {len(self.lista_de_dicionarios)}")
+        print("Assistant: Bem vindo ao seu assistente. \n")
+
+        mensagens = [{
+            "role": "user",
+            "content": f"A partir da posição '{position}', posso alcançar quais posições?\n"
+        }]
+
+        resposta = client.chat.completions.create(
+            model="gpt-3.5-turbo-0125",
+            messages=mensagens,
+            tools=self.tools,
+            tool_choice="auto"
+        )    
+
+        print(f"Quantidade de choices: {len(resposta.choices)}")
+        print(f"Lista de calls: {resposta.choices[0].message.tool_calls}")
+
+        mensagem_resp = resposta.choices[0].message
+        tool_call = mensagem_resp.tool_calls[0]
+        function_name = tool_call.function.name
+        function_to_call = self.funcoes_disponiveis[function_name]
+        function_args = json.loads(tool_call.function.arguments)
+        function_response = function_to_call(
+            self, posicao=function_args.get("posicao")
+        )
+
+        # Adiciona a requisição do assistente
+        mensagem_resp = resposta.choices[0].message.tool_calls
+        call_id = mensagem_resp[0].id
+        function_name = mensagem_resp[0].function.name
+        args = mensagem_resp[0].function.arguments
+        mensagens.append({
+            "role": "assistant",
+            "tool_calls": [
+            {
+                "id": call_id,
+                "type": "function",
+                "function": {
+                "name": function_name,
+                "arguments": args
+                }
+            }
+            ]
+        })
+
+        mensagem_resp = resposta.choices[0].message
+        tool_call = mensagem_resp.tool_calls[0]
+        function_name = tool_call.function.name
+        function_to_call = self.funcoes_disponiveis[function_name]
+        function_args = json.loads(tool_call.function.arguments)
+        function_response = function_to_call(
+            self, posicao=function_args.get("posicao")
+        )
+
+        # executa todas as chamadas às funções
+        for tool_call in mensagem_resp.tool_calls:
+            function_name = tool_call.function.name
+            function_to_call = self.funcoes_disponiveis[function_name]
+            function_args = json.loads(tool_call.function.arguments)
+            function_response = function_to_call(
+                self, posicao=function_args.get("posicao")
+            )
+            mensagens.append({
+                "tool_call_id": tool_call.id,
+                "role": "tool",
+                "name": function_name,
+                "content": function_response,
+            })
+
+        # Realiza a segunda chamada
+        segunda_resposta = client.chat.completions.create(
+            model="gpt-3.5-turbo-0125",
+            messages=mensagens,
+        )
+
+        resposta = segunda_resposta.choices[0].message.content
+        print(f"\nAssistente: {resposta}\n" )
+        return resposta
+
+
+
 if __name__ == "__main__":
     board = Board()
-    b = Player(color="red", type='Detective', nick="first", position={"x": 0, "y": 0})
-    b.current_spot = 62
-    c = Player(color="red", type='Detective', nick="second", position={"x": 0, "y": 0})
-    c.current_spot = 47
-    # l = Player()
-    # g = Player()
-    # board.history.tickets.append(Ticket(modal_type="TAXI"))
-    # board.history.tickets.append(Ticket(modal_type="BUS"))
-    # board.history.tickets.append(Ticket(modal_type="METRO"))
-    # board.history.tickets.append(Ticket(modal_type="HIDDEN"))
-    # board.history.tickets.append(Ticket(modal_type="BUS"))
+    x = board._Board__carregar_percursos()
+    print(f" len {len(x)}")
 
-    board.add_player(b)
-    board.add_player(c)
-    # board.add_player(l)
-    # board.add_player(g)
+    # b = Player(color="red", type='Detective', nick="first", position={"x": 0, "y": 0})
+    # b.current_spot = 62
+    # c = Player(color="red", type='Detective', nick="second", position={"x": 0, "y": 0})
+    # c.current_spot = 47
+    # # l = Player()
+    # # g = Player()
+    # # board.history.tickets.append(Ticket(modal_type="TAXI"))
+    # # board.history.tickets.append(Ticket(modal_type="BUS"))
+    # # board.history.tickets.append(Ticket(modal_type="METRO"))
+    # # board.history.tickets.append(Ticket(modal_type="HIDDEN"))
+    # # board.history.tickets.append(Ticket(modal_type="BUS"))
 
-    # ret = board._Board__is_x_accessible(46)
+    # board.add_player(b)
+    # board.add_player(c)
+    # # board.add_player(l)
+    # # board.add_player(g)
 
-    print(board.get_history())
+    # # ret = board._Board__is_x_accessible(46)
+
+    # print(board.get_history())

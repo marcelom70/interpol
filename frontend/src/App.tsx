@@ -159,6 +159,33 @@ export default function Board() {
     return () => window.removeEventListener("resize", updateBoardSize);
   }, []);
 
+  const handleAskAI = async () => {
+    console.log(`Position: ${parseInt(position)}`);
+    const requestBody = {
+      type: "",
+      nick: "",
+      color: "red",
+      current_spot: parseInt(position),
+      position: { x: 0, y: 0 },
+    };
+
+    try {
+      const response = await fetch(`http://${backendUrl}:8000/ask-ai`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(requestBody),
+      });
+      console.log(`Value found ${randomValue} in ask-ai`);
+      const data = await response.json();
+      console.log("API response:", data);
+      alert(`Interpol says: ${data}`);
+    } catch (error) {
+      console.error("Error while moving player:", error);
+    }
+  };
+
   const handleMove = async () => {
     if (!position) {
       alert("Insert a valid position");
@@ -305,6 +332,20 @@ export default function Board() {
           }}
         >
           Move
+        </button>
+
+        <button
+          onClick={handleAskAI}
+          style={{
+            marginLeft: "20px",
+            padding: "8px 15px",
+            background: "blue",
+            color: "white",
+            border: "none",
+            cursor: "pointer",
+          }}
+        >
+          ?
         </button>
 
         {isPlayerX && (

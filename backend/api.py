@@ -2,6 +2,7 @@ import json
 from interpol.game import *
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect, Response
 from fastapi.middleware.cors import CORSMiddleware
+from mangum import Mangum
 
 
 app = FastAPI()
@@ -29,6 +30,7 @@ class MoveRequest(BaseModel):
 
 @app.get("/")
 async def read_root():    
+    game.refresh_state()
     return {"message": f"Interpol API already running. Match {'' if game.status == 'not started' else 'not '}started"}
 
 @app.websocket("/ws")
@@ -58,6 +60,7 @@ async def add_player(player: Player, response: Response):
 
 @app.get("/players")
 def list_players(response: Response):
+    game.refresh_state()
     return {"players": len(game.players_list)}  
 
 @app.post("/start-match")
@@ -160,3 +163,6 @@ async def ask_ai(request: Player, response: Response):
 @app.get("/config")
 def list_config(response: Response):
     return {"config": game.config()}  
+
+
+handler = Mangum(app)

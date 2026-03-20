@@ -1,6 +1,5 @@
 from enum import Enum
 from typing import Optional
-import pandas as pd
 import os
 import json
 import random
@@ -9,6 +8,7 @@ import openai
 import json
 from dotenv import load_dotenv, find_dotenv
 import pandas as pd
+import redis
 
 _ = load_dotenv(find_dotenv())
 
@@ -85,9 +85,18 @@ class Board:
 
     colors = [ "red", "purple", "magenta", "orange", "blue",]
     visible_rounds = [3, 8, 13, 18, 24]
-    lista_de_dicionarios = []
+    dictionaries_list = []
 
     def __init__(self):
+        self.redis_key = os.getenv("INTERPOL_STATE_KEY", "interpol:game_state")
+        self.redis_client = None
+        redis_url = os.getenv("REDIS_URL", "redis://localhost:6379/0")
+        try:
+            self.redis_client = redis.Redis.from_url(redis_url, decode_responses=True)
+            self.redis_client.ping()
+        except Exception:
+            self.redis_client = None
+
         # Current directory
         script_dir = os.path.dirname(os.path.abspath(__file__))
 
@@ -102,9 +111,50 @@ class Board:
             spot = Spot(row.SPOT, row.X, row.Y)
             self.__add_spot(spot)        
         self.__load_config()
+        self.__load_state()
+
+    def __serialize_state(self):
+        return {
+            "players_list": [player.model_dump() for player in self.players_list],
+            "history_tickets": [ticket.model_dump() for ticket in self.history.tickets],
+            "status": self.status,
+            "current_player_nick": self.current_player.nick if self.current_player else None,
+            "colors": self.colors,
+            "player_x_visible": self.player_x_visible,
+        }
+
+    def __load_state(self):
+        if not self.redis_client:
+            return
+        try:
+            raw_state = self.redis_client.get(self.redis_key)
+            if not raw_state:
+                return
+            state = json.loads(raw_state)
+            self.players_list = [Player(**player) for player in state.get("players_list", [])]
+            self.history = History()
+            self.history.tickets = [Ticket(**ticket) for ticket in state.get("history_tickets", [])]
+            self.status = state.get("status", "not started")
+            self.colors = state.get("colors", self.colors)
+            self.player_x_visible = state.get("player_x_visible", False)
+            current_player_nick = state.get("current_player_nick")
+            self.current_player = next((p for p in self.players_list if p.nick == current_player_nick), None)
+        except Exception:
+            pass
+
+    def __save_state(self):
+        if not self.redis_client:
+            return
+        try:
+            self.redis_client.set(self.redis_key, json.dumps(self.__serialize_state()))
+        except Exception:
+            pass
+
+    def refresh_state(self):
+        self.__load_state()
 
 
-    def __carregar_percursos(self):
+    def __load_resources(self):
         # Current directory
         script_dir = os.path.dirname(os.path.abspath(__file__))        
         nomeArquivo = os.path.join(script_dir, "routes.json")
@@ -112,23 +162,23 @@ class Board:
             retorno = json.load(f)
         return retorno
 
-    def __consulta_privada(self, posicao):
+    def __private_search(self, position):
         retorno = []
-        print(f"Onde estou: {posicao}")
-        print(f"Len da lista de dict: {len(self.lista_de_dicionarios)}")
-        for dicionario in self.lista_de_dicionarios:
-            valores = list(dicionario.values())
-            modal, posicao1, posicao2 = valores
-            print(f"Modal: {modal}, Posição 1: {posicao1}, Posição 2: {posicao2}") 
+        print(f"Current position: {position}")
+        print(f"Len of dict list: {len(self.dictionaries_list)}")
+        for dicionario in self.dictionaries_list:
+            values = list(dicionario.values())
+            modal, position1, position2 = values
+            print(f"Modal: {modal}, Position 1: {position1}, Position 2: {position2}") 
             posicaoEncontrada = ''        
-            if posicao == str(posicao1):
-                print(f"Encontrou na posição 1: {posicao2}")
-                posicaoEncontrada = str(posicao2)
-            elif posicao == str(posicao2):
-                print(f"Encontrou na posição 2: {posicao1}")
-                posicaoEncontrada = str(posicao1)
+            if position == str(position1):
+                print(f"Position found 1: {position2}")
+                posicaoEncontrada = str(position2)
+            elif position == str(position2):
+                print(f"Position found 2: {position1}")
+                posicaoEncontrada = str(position1)
             if posicaoEncontrada != '':
-                percurso = {"posicao": posicaoEncontrada, "modal": modal}
+                percurso = {"position": posicaoEncontrada, "modal": modal}
                 print(f"Segundo encontrado, dá pra ir para esses lugares: {percurso}")
                 retorno.append(percurso)
         
@@ -137,7 +187,7 @@ class Board:
 
 
     def consultar_percurso(self, posicao):
-        return self.__consulta_privada(posicao)
+        return self.__private_search(posicao)
 
 
     tools = [
@@ -200,6 +250,7 @@ class Board:
             return self.colors.pop(i)
 
     def add_player(self, player: Player):
+        self.__load_state()
         try:
             print(f'{player.nick} just entered!')
             if self.__check_player(player.nick):
@@ -240,6 +291,7 @@ class Board:
         except Exception as e:            
             return_str = {"message": f'{e}', "player": None}
         finally:
+            self.__save_state()
             return return_str 
 
     def __add_spot(self, spot: Spot):
@@ -262,6 +314,7 @@ class Board:
         return False    
 
     def start_match(self, player: Player):
+        self.__load_state()
         try:
             return_str = ''
             if self.__check_player(player.nick):
@@ -289,6 +342,7 @@ class Board:
         except Exception as e:
             return_str = f'{e}'
         finally:
+            self.__save_state()
             return return_str 
 
     def borrow_ticket(self, borrower: Player, lender: Player, modal_type):
@@ -303,9 +357,11 @@ class Board:
         return ret
 
     def is_x_hidden(self):
+        self.__load_state()
         return not len(self.history.tickets) in self.visible_rounds
 
     def get_history(self):
+        self.__load_state()
         messageSocket = ""
         for item in range(24):
             first_letter = " "
@@ -318,6 +374,7 @@ class Board:
         return messageSocket
 
     def reset(self,player: Player):
+        self.__load_state()
         try:            
             self.status = "not started"
             for player in self.players_list:
@@ -328,10 +385,12 @@ class Board:
             return_str = f'{e}'
             player = None
         finally:
+            self.__save_state()
             return {"message": return_str, "player": player}
 
 
     def remove_player(self, client_id: int):
+        self.__load_state()
 
         playerRemoved = None
         for p in self.players_list:
@@ -344,6 +403,7 @@ class Board:
             if self.current_player.client_id == playerRemoved.client_id:
                 self.__set_next(playerRemoved)
             self.players_list.remove(playerRemoved) 
+        self.__save_state()
 
     def __set_next(self, player: Player):
         if (self.players_list.index(player) + 1) >= len(self.players_list):
@@ -352,6 +412,7 @@ class Board:
             self.current_player = self.players_list[self.players_list.index(self.current_player) + 1]
 
     def move(self, player: Player, new_spot, modal_type):
+        self.__load_state()
         try:
             return_str = ''
             if self.status == "not started":
@@ -420,16 +481,17 @@ class Board:
             return_str = f'{e}'
             player = None
         finally:
+            self.__save_state()
             return {"message": return_str, "player": player}
 
     def ask_ai(self, position):
-        self.lista_de_dicionarios = self.__carregar_percursos()
-        print(f"Tamanho da lista: {len(self.lista_de_dicionarios)}")
-        print("Assistant: Bem vindo ao seu assistente. \n")
+        self.dictionaries_list = self.__load_resources()
+        print(f"Tamanho da lista: {len(self.dictionaries_list)}")
+        print("Assistant: Welcome to your assistant. \n")
 
         mensagens = [{
             "role": "user",
-            "content": f"A partir da posição '{position}', posso alcançar quais posições?\n"
+            "content": f"From position '{position}', which position can I reach?\n"
         }]
 
         resposta = client.chat.completions.create(
@@ -440,7 +502,7 @@ class Board:
         )    
 
         print(f"Quantidade de choices: {len(resposta.choices)}")
-        print(f"Lista de calls: {resposta.choices[0].message.tool_calls}")
+        print(f"List of calls: {resposta.choices[0].message.tool_calls}")
 
         mensagem_resp = resposta.choices[0].message
         tool_call = mensagem_resp.tool_calls[0]
@@ -451,7 +513,6 @@ class Board:
             self, posicao=function_args.get("posicao")
         )
 
-        # Adiciona a requisição do assistente
         mensagem_resp = resposta.choices[0].message.tool_calls
         call_id = mensagem_resp[0].id
         function_name = mensagem_resp[0].function.name
@@ -479,7 +540,6 @@ class Board:
             self, posicao=function_args.get("posicao")
         )
 
-        # executa todas as chamadas às funções
         for tool_call in mensagem_resp.tool_calls:
             function_name = tool_call.function.name
             function_to_call = self.funcoes_disponiveis[function_name]
@@ -494,7 +554,6 @@ class Board:
                 "content": function_response,
             })
 
-        # Realiza a segunda chamada
         segunda_resposta = client.chat.completions.create(
             model="gpt-3.5-turbo-0125",
             messages=mensagens,
@@ -511,23 +570,3 @@ if __name__ == "__main__":
     x = board._Board__carregar_percursos()
     print(f" len {len(x)}")
 
-    # b = Player(color="red", type='Detective', nick="first", position={"x": 0, "y": 0})
-    # b.current_spot = 62
-    # c = Player(color="red", type='Detective', nick="second", position={"x": 0, "y": 0})
-    # c.current_spot = 47
-    # # l = Player()
-    # # g = Player()
-    # # board.history.tickets.append(Ticket(modal_type="TAXI"))
-    # # board.history.tickets.append(Ticket(modal_type="BUS"))
-    # # board.history.tickets.append(Ticket(modal_type="METRO"))
-    # # board.history.tickets.append(Ticket(modal_type="HIDDEN"))
-    # # board.history.tickets.append(Ticket(modal_type="BUS"))
-
-    # board.add_player(b)
-    # board.add_player(c)
-    # # board.add_player(l)
-    # # board.add_player(g)
-
-    # # ret = board._Board__is_x_accessible(46)
-
-    # print(board.get_history())

@@ -1,0 +1,72 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Interpol backend on AWS Lambda (FastAPI + Mangum)
+
+Parameters:
+  RedisUrl:
+    Type: String
+    Description: Redis connection URL, e.g. redis://host:6379/0
+  InterpolStateKey:
+    Type: String
+    Default: interpol:game_state
+    Description: Redis key used to persist game state
+  OpenAiApiKey:
+    Type: String
+    NoEcho: true
+    Description: OpenAI API key for ask-ai endpoint
+  StageName:
+    Type: String
+    Default: prod
+    Description: API Gateway stage name
+
+Globals:
+  Function:
+    Runtime: python3.11
+    Timeout: 30
+    MemorySize: 512
+    Environment:
+      Variables:
+        REDIS_URL: !Ref RedisUrl
+        INTERPOL_STATE_KEY: !Ref InterpolStateKey
+        OPENAI_API_KEY: !Ref OpenAiApiKey
+
+Resources:
+  InterpolBackendFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./
+      Handler: api.handler
+      Events:
+        Root:
+          Type: HttpApi
+          Properties:
+            Path: /
+            Method: ANY
+            ApiId: !Ref InterpolHttpApi
+        Proxy:
+          Type: HttpApi
+          Properties:
+            Path: /{proxy+}
+            Method: ANY
+            ApiId: !Ref InterpolHttpApi
+
+  InterpolHttpApi:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      StageName: !Ref StageName
+      CorsConfiguration:
+        AllowOrigins:
+          - "*"
+        AllowHeaders:
+          - "*"
+        AllowMethods:
+          - GET
+          - POST
+          - PUT
+          - DELETE
+          - OPTIONS
+
+Outputs:
+  ApiUrl:
+    Description: HTTP API endpoint
+    Value: !Sub "https://${InterpolHttpApi}.execute-api.${AWS::Region}.amazonaws.com/${StageName}"
